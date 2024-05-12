@@ -12,4 +12,5 @@ body {
 :root {
     --heightHeader: 50px;
     --greenHeader: #00a65a;
+    --heightFooter: 90px;
 }
