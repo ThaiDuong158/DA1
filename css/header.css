@@ -18,6 +18,10 @@
     height: fit-content;
 }
 
+.header a {
+    text-decoration: none;
+}
+
 .header p {
     height: var(--heightHeader);
     display: flex;
