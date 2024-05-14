@@ -2,7 +2,6 @@
 
 .sidebar-small-hide {
     display: none !important;
-    transform: translateX(-100%);
 }
 
 .sidebar-small-width {
