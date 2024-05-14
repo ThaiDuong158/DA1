@@ -2,6 +2,7 @@
     width: 100%;
     height: var(--heightHeader);
     font-size: 20px;
+    position: relative;
 }
 
 .header .row {
@@ -52,4 +53,43 @@
 .header__login p {
     font-weight: 400;
     font-size: 14px;
+}
+
+.header__login:hover .dropdown-list{
+    display: block;
+}
+
+.dropdown-list {
+    position: absolute;
+    transform: translate(-31%, 61%);
+    border: 1px solid #eee;
+    cursor: default;
+    display: none;
+}
+
+.dropdown-info {
+    background-color: var(--greenHeader);
+}
+
+.dropdown-list p {
+    height: fit-content;
+}
+
+.dropdown-info {
+    padding: 8px;
+}
+
+.dropdown-text {
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+.dropdown-setting {
+    padding: 8px;
+}
+
+.dropdown-mk,
+.dropdown-dx {
+    border: 1px solid #ddd;
+    background-color: #f4f4f4;
 }

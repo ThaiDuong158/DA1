@@ -1,5 +1,6 @@
 @import url(./header.css);
 @import url(./footer.css);
+@import url(./navbar.css);
 
 body {
     font-family: 'Source Sans Pro', 'Helvetica Neue', Helvetica, Arial, sans-serif;
@@ -13,3 +14,11 @@ body {
     --greenHeader: #00a65a;
     --heightFooter: 90px;
 }
+
+.no-select {
+    user-select: none;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+  }
+  
