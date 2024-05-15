@@ -9,7 +9,7 @@ const sidebarWidths = $$('.sidebar-width')
 const sidebarBtn = $('.sidebar-mini')
 
 let contentDefaultHeight = content.clientHeight
-let contentDefaulWidth= content.clientWidth
+// let contentDefaulWidth= content.clientWidth
 
 function updateContentHeight() {
     // const totalHeight = footer.clientHeight;
@@ -17,10 +17,10 @@ function updateContentHeight() {
     if (contentDefaultHeight < contentHeight) {
         content.style.height = contentHeight + "px";
     }
-    let contentlWidth = window.innerWidth - $('.sidebar').clientWidth
-    if (contentDefaulWidth < contentlWidth) {
-        content.style.height = (contentHeight-17) + "px";
-    }
+    // let contentlWidth = window.innerWidth - $('.sidebar').clientWidth
+    // if (contentDefaulWidth < contentlWidth) {
+    //     // content.style.height = (contentHeight-17) + "px";
+    // }
 }
 
 updateContentHeight()

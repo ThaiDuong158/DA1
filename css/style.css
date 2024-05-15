@@ -1,6 +1,6 @@
 @import url(./header.css);
-@import url(./footer.css);
 @import url(./navbar.css);
+@import url(./footer.css);
 
 body {
     font-family: 'Source Sans Pro', 'Helvetica Neue', Helvetica, Arial, sans-serif;
