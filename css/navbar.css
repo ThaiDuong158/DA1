@@ -21,7 +21,7 @@
 .sidebar {
     padding: 0;
     background-color: #222d32;
-    
+
 }
 
 .sidebar-item:hover {
@@ -51,6 +51,4 @@
     border-left: 3px solid var(--greenHeader);
 }
 
-.sidebar-icon {
-    
-}
+.sidebar-icon {}
