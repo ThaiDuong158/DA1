@@ -9,7 +9,6 @@ const sidebarWidths = $$('.sidebar-width')
 const sidebarBtn = $('.sidebar-mini')
 
 let contentDefaultHeight = content.clientHeight
-// let contentDefaulWidth= content.clientWidth
 
 function updateContentHeight() {
     // const totalHeight = footer.clientHeight;
@@ -17,20 +16,20 @@ function updateContentHeight() {
     if (contentDefaultHeight < contentHeight) {
         content.style.height = contentHeight + "px";
     }
-    // let contentlWidth = window.innerWidth - $('.sidebar').clientWidth
-    // if (contentDefaulWidth < contentlWidth) {
-    //     // content.style.height = (contentHeight-17) + "px";
-    // }
 }
 
 updateContentHeight()
 window.addEventListener('resize', updateContentHeight);
 
-sidebarBtn.addEventListener('click', () => {
+let sidebarHide = () => {
     sidebarHides.forEach(sidebarHide => {
         sidebarHide.classList.toggle("sidebar-small-hide");
     });
     sidebarWidths.forEach(sidebarWidth => {
         sidebarWidth.classList.toggle("sidebar-small-width");
     });
+}
+
+sidebarBtn.addEventListener('click', () => {
+    sidebarHide()
 })
