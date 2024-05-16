@@ -32,9 +32,7 @@ let sidebarHide = () => {
     });
 }
 
-sidebarBtn.addEventListener('click', () => {
-    sidebarHide()
-})
+sidebarBtn.addEventListener('click', sidebarHide)
 
 sidebarItems.forEach(sidebarItem => {
     if (sidebarItem.getAttribute('href') === `..${path}`) {
