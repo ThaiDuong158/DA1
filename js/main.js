@@ -8,6 +8,7 @@ const sidebarHides = $$('.sidebar-hide')
 const sidebarWidths = $$('.sidebar-width')
 const sidebarBtn = $('.sidebar-mini')
 const sidebarItems = $$('.sidebar-item')
+const path = window.location.pathname;
 
 let contentDefaultHeight = content.clientHeight
 
@@ -35,10 +36,11 @@ sidebarBtn.addEventListener('click', () => {
     sidebarHide()
 })
 
-sidebarItems.forEach(sidebarItem=> {
-    if (sidebarItem.getAttribute('href') === '#') {
+sidebarItems.forEach(sidebarItem => {
+    if (sidebarItem.getAttribute('href') === `..${path}`) {
+        sidebarItem.setAttribute('href', '#');
         let sidebarLeftLight = $('.sidebar-item.left-line')
         sidebarLeftLight.classList.remove("left-line")
         sidebarItem.classList.add("left-line")
-    } 
+    }
 })
